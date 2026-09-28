@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Campus Fest 2026</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+    <div class="logo">
+        🎓 Campus Fest 2026
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#events">Events</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#registration">Registration</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+
+<!-- ================= HOME ================= -->
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <h1>Campus Fest 2026</h1>
+
+        <p>
+            Welcome to our college's biggest cultural and technical festival!
+        </p>
+
+        <p>
+            Learn • Compete • Create • Celebrate
+        </p>
+
+        <a href="#registration" class="btn">
+            Register Now
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ANNOUNCEMENT ================= -->
+
+<section class="announcement">
+
+    <h2>📢 Latest Announcement</h2>
+
+    <p id="announcementText">
+        Registration is now open for all events!
+    </p>
+
+    <button onclick="changeAnnouncement()">
+        View Announcement
+    </button>
+
+</section>
+
+
+<!-- ================= EVENTS ================= -->
+
+<section id="events" class="section">
+
+    <h2>🎯 Events</h2>
+
+    <p class="section-intro">
+        Choose your favourite event and participate in Campus Fest 2026.
+    </p>
+
+
+    <!-- Event Filter -->
+
+    <div class="filter-buttons">
+
+        <button onclick="filterEvents('all')">
+            All
+        </button>
+
+        <button onclick="filterEvents('technical')">
+            Technical
+        </button>
+
+        <button onclick="filterEvents('cultural')">
+            Cultural
+        </button>
+
+        <button onclick="filterEvents('sports')">
+            Sports
+        </button>
+
+    </div>
+
+
+    <div class="event-container">
+
+
+        <!-- Event 1 -->
+
+        <div class="event-card technical">
+
+            <div class="event-icon">
+                💻
+            </div>
+
+            <h3>Code Challenge</h3>
+
+            <p>
+                Test your programming and problem-solving skills.
+            </p>
+
+            <p><b>Date:</b> 10 October 2026</p>
+
+            <p><b>Venue:</b> Computer Lab</p>
+
+            <button onclick="selectEvent('Code Challenge')">
+                Register
+            </button>
+
+        </div>
+
+
+        <!-- Event 2 -->
+
+        <div class="event-card technical">
+
+            <div class="event-icon">
+                🤖
+            </div>
+
+            <h3>Tech Quiz</h3>
+
+            <p>
+                Participate in an exciting technology quiz.
+            </p>
+
+            <p><b>Date:</b> 11 October 2026</p>
+
+            <p><b>Venue:</b> Seminar Hall</p>
+
+            <button onclick="selectEvent('Tech Quiz')">
+                Register
+            </button>
+
+        </div>
+
+
+        <!-- Event 3 -->
+
+        <div class="event-card cultural">
+
+            <div class="event-icon">
+                🎤
+            </div>
+
+            <h3>Singing</h3>
+
+            <p>
+                Show your talent and entertain the audience.
+            </p>
+
+            <p><b>Date:</b> 12 October 2026</p>
+
+            <p><b>Venue:</b> Main Auditorium</p>
+
+            <button onclick="selectEvent('Singing')">
+                Register
+            </button>
+
+        </div>
+
+
+        <!-- Event 4 -->
+
+        <div class="event-card cultural">
+
+            <div class="event-icon">
+                💃
+            </div>
+
+            <h3>Dance Competition</h3>
+
+            <p>
+                Perform your best dance and win exciting prizes.
+            </p>
+
+            <p><b>Date:</b> 12 October 2026</p>
+
+            <p><b>Venue:</b> Open Stage</p>
+
+            <button onclick="selectEvent('Dance Competition')">
+                Register
+            </button>
+
+        </div>
+
+
+        <!-- Event 5 -->
+
+        <div class="event-card sports">
+
+            <div class="event-icon">
+                🏏
+            </div>
+
+            <h3>Cricket</h3>
+
+            <p>
+                Participate in the inter-department cricket tournament.
+            </p>
+
+            <p><b>Date:</b> 13 October 2026</p>
+
+            <p><b>Venue:</b> College Ground</p>
+
+            <button onclick="selectEvent('Cricket')">
+                Register
+            </button>
+
+        </div>
+
+
+        <!-- Event 6 -->
+
+        <div class="event-card sports">
+
+            <div class="event-icon">
+                ⚽
+            </div>
+
+            <h3>Football</h3>
+
+            <p>
+                Compete with different college teams.
+            </p>
+
+            <p><b>Date:</b> 14 October 2026</p>
+
+            <p><b>Venue:</b> Sports Ground</p>
+
+            <button onclick="selectEvent('Football')">
+                Register
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SCHEDULE ================= -->
+
+<section id="schedule" class="section schedule-section">
+
+    <h2>📅 Event Schedule</h2>
+
+    <div class="table-container">
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Event</th>
+                    <th>Venue</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>10 Oct</td>
+                    <td>10:00 AM</td>
+                    <td>Code Challenge</td>
+                    <td>Computer Lab</td>
+                </tr>
+
+                <tr>
+                    <td>11 Oct</td>
+                    <td>11:00 AM</td>
+                    <td>Tech Quiz</td>
+                    <td>Seminar Hall</td>
+                </tr>
+
+                <tr>
+                    <td>12 Oct</td>
+                    <td>02:00 PM</td>
+                    <td>Singing</td>
+                    <td>Auditorium</td>
+                </tr>
+
+                <tr>
+                    <td>12 Oct</td>
+                    <td>04:00 PM</td>
+                    <td>Dance Competition</td>
+                    <td>Open Stage</td>
+                </tr>
+
+                <tr>
+                    <td>13 Oct</td>
+                    <td>09:00 AM</td>
+                    <td>Cricket</td>
+                    <td>College Ground</td>
+                </tr>
+
+                <tr>
+                    <td>14 Oct</td>
+                    <td>09:00 AM</td>
+                    <td>Football</td>
+                    <td>Sports Ground</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- ================= REGISTRATION ================= -->
+
+<section id="registration" class="section">
+
+    <h2>📝 Event Registration</h2>
+
+    <p class="section-intro">
+        Fill in your details to register for the festival.
+    </p>
+
+
+    <form id="registrationForm">
+
+        <div class="form-group">
+
+            <label>Full Name</label>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+            >
+
+            <small id="nameError"></small>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>Email</label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+            >
+
+            <small id="emailError"></small>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>Mobile Number</label>
+
+            <input
+                type="tel"
+                id="mobile"
+                placeholder="Enter 10 digit mobile number"
+            >
+
+            <small id="mobileError"></small>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>Department / Year</label>
+
+            <input
+                type="text"
+                id="department"
+                placeholder="Example: CSE - 3rd Year"
+            >
+
+            <small id="departmentError"></small>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>Select Event</label>
+
+            <select id="event">
+
+                <option value="">
+                    Select an event
+                </option>
+
+                <option value="Code Challenge">
+                    Code Challenge
+                </option>
+
+                <option value="Tech Quiz">
+                    Tech Quiz
+                </option>
+
+                <option value="Singing">
+                    Singing
+                </option>
+
+                <option value="Dance Competition">
+                    Dance Competition
+                </option>
+
+                <option value="Cricket">
+                    Cricket
+                </option>
+
+                <option value="Football">
+                    Football
+                </option>
+
+            </select>
+
+            <small id="eventError"></small>
+
+        </div>
+
+
+        <button type="submit" class="submit-btn">
+            Submit Registration
+        </button>
+
+
+        <div id="successMessage"></div>
+
+    </form>
+
+</section>
+
+
+<!-- ================= GALLERY ================= -->
+
+<section id="gallery" class="section">
+
+    <h2>📸 Event Gallery</h2>
+
+    <p class="section-intro">
+        Memories from our college events.
+    </p>
+
+
+    <div class="gallery">
+
+        <img
+            src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80"
+            alt="College event"
+        >
+
+        <img
+            src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=800&q=80"
+            alt="Conference"
+        >
+
+        <img
+            src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80"
+            alt="Festival"
+        >
+
+        <img
+            src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=800&q=80"
+            alt="Music event"
+        >
+
+        <img
+            src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80"
+            alt="Cultural event"
+        >
+
+        <img
+            src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=800&q=80"
+            alt="Students event"
+        >
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="section contact-section">
+
+    <h2>📞 Contact Us</h2>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <h3>Campus Fest Committee</h3>
+
+            <p>📍 ABC College, Andhra Pradesh</p>
+
+            <p>📧 campusevent@example.com</p>
+
+            <p>📱 +91 98765 43210</p>
+
+            <p>
+                Contact us for event-related queries.
+            </p>
+
+        </div>
+
+
+        <form id="contactForm">
+
+            <input
+                type="text"
+                id="contactName"
+                placeholder="Your Name"
+            >
+
+            <input
+                type="email"
+                id="contactEmail"
+                placeholder="Your Email"
+            >
+
+            <textarea
+                id="message"
+                placeholder="Enter your message"
+                rows="5"
+            ></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+            <p id="contactSuccess"></p>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <h3>🎓 Campus Fest 2026</h3>
+
+    <p>
+        College Event Management Portal
+    </p>
+
+    <p>
+        © 2026 Campus Fest. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
