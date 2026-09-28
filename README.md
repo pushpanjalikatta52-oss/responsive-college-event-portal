@@ -1,6 +1,4 @@
 # responsive-college-event-portal
 ## 🚀 Live Demo
 
-The Campus Fest 2026 website is available online as a live demo. You can explore the events, schedule, registration form, gallery, and contact section using the link below.
-
-🔗 **Live Demo:** https://pushpanjalikatta52-oss.github.io/campus-fest-2026/
+Campus Fest 2026 is a responsive College Event Management Portal developed using HTML5, CSS3, and JavaScript. The website allows students to explore technical, cultural, and sports events, view the event schedule, register for events, browse the gallery, and contact the event committee. The project also includes interactive event filtering, announcements, and form validation. **[Click here to view the Campus Fest 2026 Live Demo](http://127.0.0.1:5500/#home)**.
